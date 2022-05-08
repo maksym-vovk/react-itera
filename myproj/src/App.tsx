@@ -5,11 +5,11 @@ import UserCard from "./components/UserCard/UserCard";
 const App = () => {
 
     const userInfo = {
-        name: "Maksym Vovk",
+        name: "Max V",
         biography: "Frontend developer with experience in developing web sites. Attentive to details and stress resistant. My main goal is to develop my abilities to the highest possible level. I want to discover new technologies and work on non-standard projects. I am a team player and hope to become a part of a strong team.",
         contacts: {
-            phoneNumber: "+380632916183",
-            email: "mvx.vovk@gmail.com"
+            phoneNumber: "+380111111111",
+            email: "mmm.vvv@gmail.com"
         }
     }
 
