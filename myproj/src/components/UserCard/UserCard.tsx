@@ -1,24 +1,23 @@
 import React from "react";
 import "./style.css";
+import UserContacts from "../UserContacts/UserContacts";
+
+interface Contacts {
+    phoneNumber: string | number,
+    email: string
+}
 
 type userInfoProps = {
     name: string,
     biography: string,
-    contacts: {
-        phoneNumber: string,
-        email: string
-    }
+    contacts: Contacts
 }
 
 const UserCard: React.FC<userInfoProps> = ({name, biography, contacts }) => (
-    <div className={"user"}>
+    <div className="user">
         <h2 className="user__name">{name}</h2>
         <p className="user__bio">{biography}</p>
-        <div className="user-contacts">
-            <h3 className={"user-contacts__title"}>Contacts:</h3>
-            <span className="user-contacts__data">Phone: {contacts.phoneNumber}</span>
-            <span className="user-contacts__data">E-mail: {contacts.email}</span>
-        </div>
+        <UserContacts contacts={contacts}/>
         <span className="user__intro">Hover me</span>
     </div>
 )
